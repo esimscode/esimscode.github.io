@@ -27,7 +27,7 @@ export function Work() {
                 <span className="work__body">
                   <span className="work__heading">
                     <span className="work__name">{project.name}</span>
-                    <span className="work__year">{project.year}</span>
+                    {project.year ? <span className="work__year">{project.year}</span> : null}
                   </span>
                   <span className="work__summary">{project.summary}</span>
                   <span className="work__description">{project.description}</span>

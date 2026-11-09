@@ -85,13 +85,13 @@ export const profile = {
       year: "2026",
     },
     {
-      name: "Nail Standards",
-      summary: "Marketing site for a nail salon standards and education brand.",
+      name: "Connect Music",
+      summary: "Marketing site for a music distribution, publishing and artist-funding company.",
       description:
-        "A fast, editorial storefront built to make a niche B2B offer feel established from the first scroll.",
-      tags: ["TypeScript", "Front end", "Responsive"],
-      href: "https://nail-standards.vercel.app",
-      year: "2026",
+        "Built in Next.js: the capital and ownership story, animated growth stats, an artist roster with streaming numbers, the how-it-works sequence and the application flow.",
+      tags: ["Next.js", "Front end", "Responsive"],
+      href: "https://www.connectmusic.com/",
+      year: "",
     },
   ] satisfies Project[],
   stack: [
