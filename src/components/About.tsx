@@ -22,6 +22,16 @@ export function About() {
           </div>
 
           <aside className="about__panel" data-reveal aria-label="Quick facts">
+            <figure className="about__portrait">
+              <img
+                src="/eric-sims.webp"
+                alt={`${profile.name}, ${profile.role.toLowerCase()}`}
+                width={560}
+                height={560}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
             <dl>
               {profile.facts.map((fact) => (
                 <div className="fact" key={fact.label}>
