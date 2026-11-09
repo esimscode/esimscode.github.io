@@ -28,14 +28,11 @@ npm run preview   # serve the production build locally
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs dependencies, builds the app and deploys `dist/` to GitHub Pages.
 
-Pages must be set to build from GitHub Actions:
+The Pages source is already set to **GitHub Actions** (Settings → Pages → Build and deployment). If it is ever switched back to "Deploy from a branch", the published site will serve the raw source instead of the build — switch it back and re-run the workflow.
 
-1. Repository **Settings → Pages**
-2. **Build and deployment → Source: GitHub Actions**
+Dependencies are pinned to exact versions in `package.json`, so CI installs are reproducible without a lockfile. If you'd prefer a lockfile, run `npm install` locally, commit `package-lock.json`, and change the workflow's install step to `npm ci`.
 
-The workflow asks GitHub to enable Pages automatically on its first run (`actions/configure-pages` with `enablement: true`), but if the deploy step fails with a Pages error, check that setting.
-
-The custom domain is preserved by `public/CNAME` (`esims.dev`). Keep the `A`/`CNAME` DNS records for GitHub Pages in place, and keep **Enforce HTTPS** enabled in the Pages settings.
+The custom domain is preserved by `public/CNAME` (`esims.dev`). Keep the `A`/`CNAME` DNS records for GitHub Pages in place.
 
 ## Structure
 
