@@ -39,7 +39,7 @@ The custom domain is preserved by `public/CNAME` (`esims.dev`). Keep the `A`/`CN
 ```
 index.html                 HTML shell, meta tags, fonts
 public/CNAME               custom domain for Pages
-public/eric-sims.webp     headshot shown in the about panel
+public/eric-sims.webp      headshot shown in the about panel
 public/favicon.svg
 src/main.tsx               React entry point
 src/App.tsx                page composition
@@ -47,4 +47,5 @@ src/data/profile.ts        all copy and content
 src/components/            Nav, Hero, Work, About, Stack, Contact, Footer
 src/hooks/useReveal.ts     scroll-reveal, respects reduced motion
 src/index.css              design tokens + layout + responsive rules
+src/about-portrait.css     styling for the about headshot
 ```
