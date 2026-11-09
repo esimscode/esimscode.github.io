@@ -1,0 +1,20 @@
+/* Headshot in the about panel. Kept separate from index.css so the portrait
+   can be restyled or removed without touching the main layout rules. */
+
+.about__portrait {
+  margin: 0 0 1.35rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--ink-raised);
+}
+
+.about__portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: saturate(0.95);
+}
