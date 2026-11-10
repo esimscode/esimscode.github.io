@@ -21,9 +21,14 @@ export function Nav() {
     <header className={`site-header${scrolled ? " site-header--scrolled" : ""}`}>
       <div className="container nav">
         <a className="nav__brand" href="#top" aria-label={`${profile.name}, back to top`}>
-          <span className="nav__mark" aria-hidden="true">
-            ES
-          </span>
+          <img
+            className="nav__mark"
+            src="/eric-sims-avatar.webp"
+            alt=""
+            width={34}
+            height={34}
+            decoding="async"
+          />
           <span className="nav__name">{profile.name}</span>
         </a>
 
